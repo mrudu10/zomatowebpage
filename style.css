@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+
+body{
+    font-family: 'Merriweather', serif;
+    background-color: #F9FAFC;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: aliceblue;
+}
+
+/* we are trying to resize the img without compressing the image=> we are setting the parent as 100px and the image to fit 100% within that parent div   */
+
+.navbar__brand
+{
+    width: 100px;
+}
+
+.navbar__logo{
+    width: 100%;
+}
+
+
+/* linearGradient(direction,grad color1 , grad color2 etc) */
+/* to right,#FF512F 0% => 0% means at the beginning, 100% extreme right of button, 51%is at the mid */
+
+.nav__item {
+
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+        );
+
+        color: #fff;
+        border: none;
+        padding: 12px;
+        /* padding is applied bew the text and the button */
+        border-radius: 6px;
+        font-weight: bold;
+    
+}
+
+.nav__item:hover {
+    border: 2px solid #FF6767;
+/* when we hover on button the hand icon will come */
+    cursor: pointer;
+}
+
+
+
+
+
+/* in the tab view we were getting extra space around so we use media query to make it responsive */
+/* tab size=768px so min width=> all sizes from 768 and above */
+
+@media (min-width: 768px) {
+    .navbar{
+        justify-content: space-between;
+    /* 10px top bottim, 30 right left */
+        padding: 10px 30px;
+    }
+}
+
+/* now in desktop view we want a bigger size so give navbar brand in desktop view */
+/* desktop view: 1024px */
+
+
+@media (min-width:1024px)
+{
+    .navbar__brand{
+        width: 150px;
+    }
+
+    .nav__item{
+        padding: 20px;
+        font-size: 20px;
+
+
+    }
+}
+
+
