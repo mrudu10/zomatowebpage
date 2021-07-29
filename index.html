@@ -1,34 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-
-
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-
     <title>Document</title>
+
 </head>
-<!--------------------------------- BEM CONVENTIONS TO BE FOLLOWED------------------------>
+
+<!-----------------------------------BEM CONVENTIONS TO BE FOLLOWED------------------------>
 
 <body>
-
+<header>
     <nav class="navbar">
     
         <!-- two div tags for logo and button -->
         
         <div class="navbar__brand">
-            <img src="assets/logo.png" alt="logo" class="navbar__logo">
+            <img src="assets/logo.png " alt="logo" class="navbar__logo">
         </div>
 
-        <div class="navbar_nav__items">
-            <button class="nav__item">Order Food</button>
+        <div class="navbar__nav__items">
+            <button class="nav__item button__primary">Order Food</button>
         </div>
     </nav>
+</header>
+
+<main class="container">
+
+    <!---------------------------------------- Hero section------------------------------------------------->
+
+    <!--------------------- using container will give a padding for the entire session --------------------->
+
+    <section class="hero__container">
+<!-- 
+        <div class="hero__container__bg__image__pattern">
+        <img  src="assets/svg/herobgpattren.svg" alt="design" class="bg__image__pattern">
+        </div>
+
+        <div class="hero__container__bg__image">
+            <img  src="assets/svg/heroShape.svg" alt="design" class="bg__image__design">
+            <img  src="assets/svg/herobgpattren.svg" alt="design" class="bg__image__pattern"> -->
+        <!-- </div>  -->
+
+        <div class="hero__image__container">        
+            <img src="assets/hero.jpg" alt="hero" class="hero__image">    
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- <img src="assets/heroShape.jpg" alt="design">
+    </div> -->
+        <div class="hero__description">
+            <h1 class="hero__text">
+                Order food from favorite restaurants near you
+            </h1>
+            <button class="button__primary">Order Now</button>
+        </div>
+    </section>
+    
+    <br>
+    <br>
+    <br>
+
+    <!----------------------------------------------- video section--------------------------------------------------------------------------------------->
+<div class="mid__video__section">
+    <div class="video__section">
+        <video  src="assets/cookvideo.mp4" type="video/mp4" muted="true" autoplay playsinline loop class="video__section__video"></video>
+    </div>
+
+    <!-- <div class="video__gradient__bg">
+        
+    </div> -->
+
+    <p class="video__below__text">
+        Your food will be prepared safely with an experienced chef, without
+        compromising on the quality and hygiene.
+    </p>
+
+</div>
+
+    <!------------------------------------------------ EXPLORE MENU------------------------------------>
+
+    <!-- explore menu is the invisible box like structure that will put the cards inside -->
+    <section class="explore__menu__container">
+    
+        <h1 class="explore__menu__text">Explore Our Menu</h1>
+    
+        <div class="explore__menu__gradient__bg">
+        
+        </div>
+        
+
+        <div class="explore__menu__lists">
+        
+        <!-- for food cards -->
+            <div class="food__card">
+                
+                <div class="food__card__image__container">
+                    <img src="assets/burger.jpg" alt="burger" class="food__image">
+                </div>
+
+                <div class="food__card__description">
+                    <h3 class="food__title">Burger</h3>
+                    <p> Burger King, Mcdonals, Burger place <span style="color: orangered;">+3</span></p>
+                </div>
+            </div>
+
+
+            <br>
+            <!-- pizza -->
+
+            <div class="food__card" id="pizza__card">
+                
+                <div class="food__card__image__container">
+                    <img src="assets/pizza.jpg" alt="burger" class="food__image">
+                </div>
+
+                <div class="food__card__description">
+                    <h3 class="food__title">Pizza</h3>
+                    <p> Pizza Hut, Domino's Pizza <span style="color: orangered;">+3</span></p>
+                </div>
+            </div>
+
+            <br>
+            <!-- icecream -->
+
+            <div class="food__card">
+                
+                <div class="food__card__image__container">
+                    <img src="assets/iceCream.jpg" alt="burger" class="food__image">
+                </div>
+
+                <div class="food__card__description">
+                    <h3 class="food__title">Ice Creams</h3>
+                    <p> Baskin Robins, Ibaco <span style="color: orangered;">+3</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="view__more_list__button">
+            <button class="view__more__button ">View More</button>
+        </div>
+    </section>
+</main>
+<br>
+<br>
+<!-- 
+<div class="stay__updated__container">
+    <h1 class="stay__updated__text">Stay Updated </h1>
+</div>
+<div class="email__container">
+    <form>
+        <input type="email" placeholder="email@email.com" class="email__input">
+        <button class="button__primary">Get Updates</button>
+    </form>
+
+</div>
+
+<br><br><br> -->
+
+
+<div class="parent" >
+    <div class="cont__text">
+        <h1 class="collections__container__text">Order From 100s of restaurants</h1>
+        <button class="button__primary explore__button">Explore</button>
+</div>
+
+
+    
+            <div class="images__containers">
+                <div class="container__1">
+                            <div class="image__1">
+                        <img src="assets/restaurant1.jpg" alt="hotel" class="hotel__1">
+                            </div>
+                    <div class="image__2">
+                        <img src="assets/restaurant2.jpg" alt="hotel" class="hotel__2">
+                    </div>
+                </div>
+
+                <div class="container__2">
+                    <div class="image__3">
+                        <img src="assets/restaurant3.jpg" alt="hotel" class="hotel__3">
+                    </div>
+                    <div class="image__4">
+                        <img src="assets/restaurant4.jpg" alt="hotel" class="hotel__4">
+                    </div>
+                </div>
+            </div>
+
+</div>
+
+    
+
+
+
+<br><br><br>
+<div class="stay__updated__container">
+    <h1 class="stay__updated__text">Stay Updated </h1>
+</div>
+<div class="email__container">
+    <form>
+
+        <input type="email" placeholder="email@email.com" class="email__input" >
+        <button class="button__primary" class="final__button" >Get Updates</button>
+    </form>
+
+</div>
+
+<br><br><br>
+
+<div >
+<div class="quote__container">
+    <img src="assets/quote.jfif" alt="quote" class="quote__image">    
+</div>
+<div class="quote__text">
+    <h2>When a man's stomach is full it makes no difference whether he is rich or poor.</h2>
+</div>
+</div>
+
+
+
+
+
+
+
+<!-- -----------------------------------------------------------footer--------------------------------------------------------------------------- -->
+
+<div class="footer">
+    <div class="footer__heading">
+        <h1>zomato</h1>
+    </div>
+    <div class="footer__list">
+    <ul style="margin-bottom: 5px;">
+    <li style="margin-bottom: 5px;">Pricing</li>
+        <li style="margin-bottom: 5px;">Terms and condition</li>
+        <li style="margin-bottom: 5px;">Partnership</li>
+        <li style="margin-bottom: 5px;">Career</li>
+        <li style="margin-bottom: 5px;">Contact</li>
+    </ul>
+</div>
+</div>
+
+
 </body>
 </html>
